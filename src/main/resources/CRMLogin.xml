@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel test suite" parallel="classes" thread-count="1">
+    <test name="Innovazones - Node - 1">
+        <parameter name="browserName" value="chrome"/>
+        <parameter name="localDriverPath" value="C:\\chromedriver_win32\\chromedriver.exe"/>
+        <parameter name="url" value="https://ui.freecrm.com"/>
+        <classes>
+
+            <!--            <class name="EmployeeTC.EmployeeAddTC">-->
+            <class name="CRM_TC.CRM_TC_fileProperty">
+            </class>
+            <!--        <class name="LoginTestCases.SignInTC">
+
+                        <methods>
+                            <include name="LoginTest()"></include>
+                            <include name="LoginTest1()"></include>
+                        </methods>
+                    </class>-->
+
+        </classes>
+    </test>
+</suite>
